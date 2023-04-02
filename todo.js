@@ -10,6 +10,11 @@ inputTodo.addEventListener('keypress', (event) => {
   }
 });
 
+createBtn.addEventListener('click', () => {
+  addToDo();
+});
+
+
 function noTask() {
   if (toDoList.innerHTML == '') {
     let emptyTask = document.createElement('div');
